@@ -21,7 +21,7 @@ if [ "$URL" = "/" ] || [ -z "$URL" ]; then
     URL="/index.html"
 fi
 
-FILE="/var/www/ascii.ftp.sh$URL"
+FILE="${BASE_PATH}${URL}"
 
 if [ -f "$FILE" ]; then
     case "$FILE" in
@@ -32,7 +32,7 @@ if [ -f "$FILE" ]; then
         *)      MIME="application/octet-stream" ;;
     esac
     SIZE=$(wc -c < "$FILE")
-    printf 'HTTP/1.1 200 OK\r\nContent-Type: %s\r\nContent-Length: %s\r\nConnection: close\r\n\r\n' "$MIME" "$SIZE"
+    printf 'HTTP/1.1 200 OK\r\nContent-Type: %s\r\nCache-Control: public, max-age=604800\r\nContent-Length: %s\r\nConnection: close\r\n\r\n' "$MIME" "$SIZE"
     cat "$FILE"
 else
     printf 'HTTP/1.1 404 Not Found\r\nConnection: close\r\n\r\n404 Not Found'

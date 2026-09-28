@@ -17,6 +17,10 @@
       * {
         font-family: sans-serif;
       }
+
+      .container {
+        overflow: scroll;
+      }
     </style>
   </head>
   <body>
@@ -26,62 +30,65 @@
     <hr>
     <main>
       <section>
-        <table border="1" cellpadding="5" cellspacing="0">
-          <thead>
-            <tr>
-              <th>Dec</th>
-              <th>Hex</th>
-              <th>Chr</th>
-              <th>Kbd</th>
-              <th>Dec</th>
-              <th>Hex</th>
-              <th>Chr</th>
-              <th>Kbd</th>
-              <th>Dec</th>
-              <th>Hex</th>
-              <th>Chr</th>
-              <th>Kbd</th>
-              <th>Dec</th>
-              <th>Hex</th>
-              <th>Chr</th>
-              <th>Kbd</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td><code>0</code></td><td><code>0</code></td><td>NUL</td><td><kbd>&#0;</kbd></td><td><code>32</code></td><td><code>20</code></td><td>SP</td><td><kbd>&#32;</kbd></td><td><code>64</code></td><td><code>40</code></td><td>@</td><td><kbd>&#64;</kbd></td><td><code>96</code></td><td><code>60</code></td><td>`</td><td><kbd>&#96;</kbd></td></tr>
-            <tr><td><code>1</code></td><td><code>1</code></td><td>SOH</td><td><kbd>&#1;</kbd></td><td><code>33</code></td><td><code>21</code></td><td>!</td><td><kbd>&#33;</kbd></td><td><code>65</code></td><td><code>41</code></td><td>A</td><td><kbd>&#65;</kbd></td><td><code>97</code></td><td><code>61</code></td><td>a</td><td><kbd>&#97;</kbd></td></tr>
-            <tr><td><code>2</code></td><td><code>2</code></td><td>STX</td><td><kbd>&#2;</kbd></td><td><code>34</code></td><td><code>22</code></td><td>"</td><td><kbd>&#34;</kbd></td><td><code>66</code></td><td><code>42</code></td><td>B</td><td><kbd>&#66;</kbd></td><td><code>98</code></td><td><code>62</code></td><td>b</td><td><kbd>&#98;</kbd></td></tr>
-            <tr><td><code>3</code></td><td><code>3</code></td><td>ETX</td><td><kbd>&#3;</kbd></td><td><code>35</code></td><td><code>23</code></td><td>#</td><td><kbd>&#35;</kbd></td><td><code>67</code></td><td><code>43</code></td><td>C</td><td><kbd>&#67;</kbd></td><td><code>99</code></td><td><code>63</code></td><td>c</td><td><kbd>&#99;</kbd></td></tr>
-            <tr><td><code>4</code></td><td><code>4</code></td><td>EOT</td><td><kbd>&#4;</kbd></td><td><code>36</code></td><td><code>24</code></td><td>$</td><td><kbd>&#36;</kbd></td><td><code>68</code></td><td><code>44</code></td><td>D</td><td><kbd>&#68;</kbd></td><td><code>100</code></td><td><code>64</code></td><td>d</td><td><kbd>&#100;</kbd></td></tr>
-            <tr><td><code>5</code></td><td><code>5</code></td><td>ENQ</td><td><kbd>&#5;</kbd></td><td><code>37</code></td><td><code>25</code></td><td>%</td><td><kbd>&#37;</kbd></td><td><code>69</code></td><td><code>45</code></td><td>E</td><td><kbd>&#69;</kbd></td><td><code>101</code></td><td><code>65</code></td><td>e</td><td><kbd>&#101;</kbd></td></tr>
-            <tr><td><code>6</code></td><td><code>6</code></td><td>ACK</td><td><kbd>&#6;</kbd></td><td><code>38</code></td><td><code>26</code></td><td>&</td><td><kbd>&#38;</kbd></td><td><code>70</code></td><td><code>46</code></td><td>F</td><td><kbd>&#70;</kbd></td><td><code>102</code></td><td><code>66</code></td><td>f</td><td><kbd>&#102;</kbd></td></tr>
-            <tr><td><code>7</code></td><td><code>7</code></td><td>BEL</td><td><kbd>&#7;</kbd></td><td><code>39</code></td><td><code>27</code></td><td>'</td><td><kbd>&#39;</kbd></td><td><code>71</code></td><td><code>47</code></td><td>G</td><td><kbd>&#71;</kbd></td><td><code>103</code></td><td><code>67</code></td><td>g</td><td><kbd>&#103;</kbd></td></tr>
-            <tr><td><code>8</code></td><td><code>8</code></td><td>BS</td><td><kbd>&#8;</kbd></td><td><code>40</code></td><td><code>28</code></td><td>(</td><td><kbd>&#40;</kbd></td><td><code>72</code></td><td><code>48</code></td><td>H</td><td><kbd>&#72;</kbd></td><td><code>104</code></td><td><code>68</code></td><td>h</td><td><kbd>&#104;</kbd></td></tr>
-            <tr><td><code>9</code></td><td><code>9</code></td><td>HT</td><td><kbd>&#9;</kbd></td><td><code>41</code></td><td><code>29</code></td><td>)</td><td><kbd>&#41;</kbd></td><td><code>73</code></td><td><code>49</code></td><td>I</td><td><kbd>&#73;</kbd></td><td><code>105</code></td><td><code>69</code></td><td>i</td><td><kbd>&#105;</kbd></td></tr>
-            <tr><td><code>10</code></td><td><code>A</code></td><td>LF</td><td><kbd>&#10;</kbd></td><td><code>42</code></td><td><code>2A</code></td><td>*</td><td><kbd>&#42;</kbd></td><td><code>74</code></td><td><code>4A</code></td><td>J</td><td><kbd>&#74;</kbd></td><td><code>106</code></td><td><code>6A</code></td><td>j</td><td><kbd>&#106;</kbd></td></tr>
-            <tr><td><code>11</code></td><td><code>B</code></td><td>VT</td><td><kbd>&#11;</kbd></td><td><code>43</code></td><td><code>2B</code></td><td>+</td><td><kbd>&#43;</kbd></td><td><code>75</code></td><td><code>4B</code></td><td>K</td><td><kbd>&#75;</kbd></td><td><code>107</code></td><td><code>6B</code></td><td>k</td><td><kbd>&#107;</kbd></td></tr>
-            <tr><td><code>12</code></td><td><code>C</code></td><td>FF</td><td><kbd>&#12;</kbd></td><td><code>44</code></td><td><code>2C</code></td><td>,</td><td><kbd>&#44;</kbd></td><td><code>76</code></td><td><code>4C</code></td><td>L</td><td><kbd>&#76;</kbd></td><td><code>108</code></td><td><code>6C</code></td><td>l</td><td><kbd>&#108;</kbd></td></tr>
-            <tr><td><code>13</code></td><td><code>D</code></td><td>CR</td><td><kbd>&#13;</kbd></td><td><code>45</code></td><td><code>2D</code></td><td>-</td><td><kbd>&#45;</kbd></td><td><code>77</code></td><td><code>4D</code></td><td>M</td><td><kbd>&#77;</kbd></td><td><code>109</code></td><td><code>6D</code></td><td>m</td><td><kbd>&#109;</kbd></td></tr>
-            <tr><td><code>14</code></td><td><code>E</code></td><td>SO</td><td><kbd>&#14;</kbd></td><td><code>46</code></td><td><code>2E</code></td><td>.</td><td><kbd>&#46;</kbd></td><td><code>78</code></td><td><code>4E</code></td><td>N</td><td><kbd>&#78;</kbd></td><td><code>110</code></td><td><code>6E</code></td><td>n</td><td><kbd>&#110;</kbd></td></tr>
-            <tr><td><code>15</code></td><td><code>F</code></td><td>SI</td><td><kbd>&#15;</kbd></td><td><code>47</code></td><td><code>2F</code></td><td>/</td><td><kbd>&#47;</kbd></td><td><code>79</code></td><td><code>4F</code></td><td>O</td><td><kbd>&#79;</kbd></td><td><code>111</code></td><td><code>6F</code></td><td>o</td><td><kbd>&#111;</kbd></td></tr>
-            <tr><td><code>16</code></td><td><code>10</code></td><td>DLE</td><td><kbd>&#16;</kbd></td><td><code>48</code></td><td><code>30</code></td><td>0</td><td><kbd>&#48;</kbd></td><td><code>80</code></td><td><code>50</code></td><td>P</td><td><kbd>&#80;</kbd></td><td><code>112</code></td><td><code>70</code></td><td>p</td><td><kbd>&#112;</kbd></td></tr>
-            <tr><td><code>17</code></td><td><code>11</code></td><td>DC1</td><td><kbd>&#17;</kbd></td><td><code>49</code></td><td><code>31</code></td><td>1</td><td><kbd>&#49;</kbd></td><td><code>81</code></td><td><code>51</code></td><td>Q</td><td><kbd>&#81;</kbd></td><td><code>113</code></td><td><code>71</code></td><td>q</td><td><kbd>&#113;</kbd></td></tr>
-            <tr><td><code>18</code></td><td><code>12</code></td><td>DC2</td><td><kbd>&#18;</kbd></td><td><code>50</code></td><td><code>32</code></td><td>2</td><td><kbd>&#50;</kbd></td><td><code>82</code></td><td><code>52</code></td><td>R</td><td><kbd>&#82;</kbd></td><td><code>114</code></td><td><code>72</code></td><td>r</td><td><kbd>&#114;</kbd></td></tr>
-            <tr><td><code>19</code></td><td><code>13</code></td><td>DC3</td><td><kbd>&#19;</kbd></td><td><code>51</code></td><td><code>33</code></td><td>3</td><td><kbd>&#51;</kbd></td><td><code>83</code></td><td><code>53</code></td><td>S</td><td><kbd>&#83;</kbd></td><td><code>115</code></td><td><code>73</code></td><td>s</td><td><kbd>&#115;</kbd></td></tr>
-            <tr><td><code>20</code></td><td><code>14</code></td><td>DC4</td><td><kbd>&#20;</kbd></td><td><code>52</code></td><td><code>34</code></td><td>4</td><td><kbd>&#52;</kbd></td><td><code>84</code></td><td><code>54</code></td><td>T</td><td><kbd>&#84;</kbd></td><td><code>116</code></td><td><code>74</code></td><td>t</td><td><kbd>&#116;</kbd></td></tr>
-            <tr><td><code>21</code></td><td><code>15</code></td><td>NAK</td><td><kbd>&#21;</kbd></td><td><code>53</code></td><td><code>35</code></td><td>5</td><td><kbd>&#53;</kbd></td><td><code>85</code></td><td><code>55</code></td><td>U</td><td><kbd>&#85;</kbd></td><td><code>117</code></td><td><code>75</code></td><td>u</td><td><kbd>&#117;</kbd></td></tr>
-            <tr><td><code>22</code></td><td><code>16</code></td><td>SYN</td><td><kbd>&#22;</kbd></td><td><code>54</code></td><td><code>36</code></td><td>6</td><td><kbd>&#54;</kbd></td><td><code>86</code></td><td><code>56</code></td><td>V</td><td><kbd>&#86;</kbd></td><td><code>118</code></td><td><code>76</code></td><td>v</td><td><kbd>&#118;</kbd></td></tr>
-            <tr><td><code>23</code></td><td><code>17</code></td><td>ETB</td><td><kbd>&#23;</kbd></td><td><code>55</code></td><td><code>37</code></td><td>7</td><td><kbd>&#55;</kbd></td><td><code>87</code></td><td><code>57</code></td><td>W</td><td><kbd>&#87;</kbd></td><td><code>119</code></td><td><code>77</code></td><td>w</td><td><kbd>&#119;</kbd></td></tr>
-            <tr><td><code>24</code></td><td><code>18</code></td><td>CAN</td><td><kbd>&#24;</kbd></td><td><code>56</code></td><td><code>38</code></td><td>8</td><td><kbd>&#56;</kbd></td><td><code>88</code></td><td><code>58</code></td><td>X</td><td><kbd>&#88;</kbd></td><td><code>120</code></td><td><code>78</code></td><td>x</td><td><kbd>&#120;</kbd></td></tr>
-            <tr><td><code>25</code></td><td><code>19</code></td><td>EM</td><td><kbd>&#25;</kbd></td><td><code>57</code></td><td><code>39</code></td><td>9</td><td><kbd>&#57;</kbd></td><td><code>89</code></td><td><code>59</code></td><td>Y</td><td><kbd>&#89;</kbd></td><td><code>121</code></td><td><code>79</code></td><td>y</td><td><kbd>&#121;</kbd></td></tr>
-            <tr><td><code>26</code></td><td><code>1A</code></td><td>SUB</td><td><kbd>&#26;</kbd></td><td><code>58</code></td><td><code>3A</code></td><td>:</td><td><kbd>&#58;</kbd></td><td><code>90</code></td><td><code>5A</code></td><td>Z</td><td><kbd>&#90;</kbd></td><td><code>122</code></td><td><code>7A</code></td><td>z</td><td><kbd>&#122;</kbd></td></tr>
-            <tr><td><code>27</code></td><td><code>1B</code></td><td>ESC</td><td><kbd>&#27;</kbd></td><td><code>59</code></td><td><code>3B</code></td><td>;</td><td><kbd>&#59;</kbd></td><td><code>91</code></td><td><code>5B</code></td><td>[</td><td><kbd>&#91;</kbd></td><td><code>123</code></td><td><code>7B</code></td><td>{</td><td><kbd>&#123;</kbd></td></tr>
-            <tr><td><code>28</code></td><td><code>1C</code></td><td>FS</td><td><kbd>&#28;</kbd></td><td><code>60</code></td><td><code>3C</code></td><td><</td><td><kbd>&#60;</kbd></td><td><code>92</code></td><td><code>5C</code></td><td>\</td><td><kbd>&#92;</kbd></td><td><code>124</code></td><td><code>7C</code></td><td>|</td><td><kbd>&#124;</kbd></td></tr>
-            <tr><td><code>29</code></td><td><code>1D</code></td><td>GS</td><td><kbd>&#29;</kbd></td><td><code>61</code></td><td><code>3D</code></td><td>=</td><td><kbd>&#61;</kbd></td><td><code>93</code></td><td><code>5D</code></td><td>]</td><td><kbd>&#93;</kbd></td><td><code>125</code></td><td><code>7D</code></td><td>}</td><td><kbd>&#125;</kbd></td></tr>
-            <tr><td><code>30</code></td><td><code>1E</code></td><td>RS</td><td><kbd>&#30;</kbd></td><td><code>62</code></td><td><code>3E</code></td><td>></td><td><kbd>&#62;</kbd></td><td><code>94</code></td><td><code>5E</code></td><td>^</td><td><kbd>&#94;</kbd></td><td><code>126</code></td><td><code>7E</code></td><td>~</td><td><kbd>&#126;</kbd></td></tr>
-            <tr><td><code>31</code></td><td><code>1F</code></td><td>US</td><td><kbd>&#31;</kbd></td><td><code>63</code></td><td><code>3F</code></td><td>?</td><td><kbd>&#63;</kbd></td><td><code>95</code></td><td><code>5F</code></td><td>_</td><td><kbd>&#95;</kbd></td><td><code>127</code></td><td><code>7F</code></td><td>DEL</td><td><kbd>&#127;</kbd></td></tr>
-          </tbody>
-        </table>
+        <h2>ANSI X3.4-1986 (0-127)</h2>
+        <div class="container">
+          <table border="1" cellpadding="5" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Dec</th>
+                <th>Hex</th>
+                <th>Chr</th>
+                <th>Kbd</th>
+                <th>Dec</th>
+                <th>Hex</th>
+                <th>Chr</th>
+                <th>Kbd</th>
+                <th>Dec</th>
+                <th>Hex</th>
+                <th>Chr</th>
+                <th>Kbd</th>
+                <th>Dec</th>
+                <th>Hex</th>
+                <th>Chr</th>
+                <th>Kbd</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><code>0</code></td><td><code>0</code></td><td>NUL</td><td><kbd>&#0;</kbd></td><td><code>32</code></td><td><code>20</code></td><td>SP</td><td><kbd>&#32;</kbd></td><td><code>64</code></td><td><code>40</code></td><td>@</td><td><kbd>&#64;</kbd></td><td><code>96</code></td><td><code>60</code></td><td>`</td><td><kbd>&#96;</kbd></td></tr>
+              <tr><td><code>1</code></td><td><code>1</code></td><td>SOH</td><td><kbd>&#1;</kbd></td><td><code>33</code></td><td><code>21</code></td><td>!</td><td><kbd>&#33;</kbd></td><td><code>65</code></td><td><code>41</code></td><td>A</td><td><kbd>&#65;</kbd></td><td><code>97</code></td><td><code>61</code></td><td>a</td><td><kbd>&#97;</kbd></td></tr>
+              <tr><td><code>2</code></td><td><code>2</code></td><td>STX</td><td><kbd>&#2;</kbd></td><td><code>34</code></td><td><code>22</code></td><td>"</td><td><kbd>&#34;</kbd></td><td><code>66</code></td><td><code>42</code></td><td>B</td><td><kbd>&#66;</kbd></td><td><code>98</code></td><td><code>62</code></td><td>b</td><td><kbd>&#98;</kbd></td></tr>
+              <tr><td><code>3</code></td><td><code>3</code></td><td>ETX</td><td><kbd>&#3;</kbd></td><td><code>35</code></td><td><code>23</code></td><td>#</td><td><kbd>&#35;</kbd></td><td><code>67</code></td><td><code>43</code></td><td>C</td><td><kbd>&#67;</kbd></td><td><code>99</code></td><td><code>63</code></td><td>c</td><td><kbd>&#99;</kbd></td></tr>
+              <tr><td><code>4</code></td><td><code>4</code></td><td>EOT</td><td><kbd>&#4;</kbd></td><td><code>36</code></td><td><code>24</code></td><td>$</td><td><kbd>&#36;</kbd></td><td><code>68</code></td><td><code>44</code></td><td>D</td><td><kbd>&#68;</kbd></td><td><code>100</code></td><td><code>64</code></td><td>d</td><td><kbd>&#100;</kbd></td></tr>
+              <tr><td><code>5</code></td><td><code>5</code></td><td>ENQ</td><td><kbd>&#5;</kbd></td><td><code>37</code></td><td><code>25</code></td><td>%</td><td><kbd>&#37;</kbd></td><td><code>69</code></td><td><code>45</code></td><td>E</td><td><kbd>&#69;</kbd></td><td><code>101</code></td><td><code>65</code></td><td>e</td><td><kbd>&#101;</kbd></td></tr>
+              <tr><td><code>6</code></td><td><code>6</code></td><td>ACK</td><td><kbd>&#6;</kbd></td><td><code>38</code></td><td><code>26</code></td><td>&</td><td><kbd>&#38;</kbd></td><td><code>70</code></td><td><code>46</code></td><td>F</td><td><kbd>&#70;</kbd></td><td><code>102</code></td><td><code>66</code></td><td>f</td><td><kbd>&#102;</kbd></td></tr>
+              <tr><td><code>7</code></td><td><code>7</code></td><td>BEL</td><td><kbd>&#7;</kbd></td><td><code>39</code></td><td><code>27</code></td><td>'</td><td><kbd>&#39;</kbd></td><td><code>71</code></td><td><code>47</code></td><td>G</td><td><kbd>&#71;</kbd></td><td><code>103</code></td><td><code>67</code></td><td>g</td><td><kbd>&#103;</kbd></td></tr>
+              <tr><td><code>8</code></td><td><code>8</code></td><td>BS</td><td><kbd>&#8;</kbd></td><td><code>40</code></td><td><code>28</code></td><td>(</td><td><kbd>&#40;</kbd></td><td><code>72</code></td><td><code>48</code></td><td>H</td><td><kbd>&#72;</kbd></td><td><code>104</code></td><td><code>68</code></td><td>h</td><td><kbd>&#104;</kbd></td></tr>
+              <tr><td><code>9</code></td><td><code>9</code></td><td>HT</td><td><kbd>&#9;</kbd></td><td><code>41</code></td><td><code>29</code></td><td>)</td><td><kbd>&#41;</kbd></td><td><code>73</code></td><td><code>49</code></td><td>I</td><td><kbd>&#73;</kbd></td><td><code>105</code></td><td><code>69</code></td><td>i</td><td><kbd>&#105;</kbd></td></tr>
+              <tr><td><code>10</code></td><td><code>A</code></td><td>LF</td><td><kbd>&#10;</kbd></td><td><code>42</code></td><td><code>2A</code></td><td>*</td><td><kbd>&#42;</kbd></td><td><code>74</code></td><td><code>4A</code></td><td>J</td><td><kbd>&#74;</kbd></td><td><code>106</code></td><td><code>6A</code></td><td>j</td><td><kbd>&#106;</kbd></td></tr>
+              <tr><td><code>11</code></td><td><code>B</code></td><td>VT</td><td><kbd>&#11;</kbd></td><td><code>43</code></td><td><code>2B</code></td><td>+</td><td><kbd>&#43;</kbd></td><td><code>75</code></td><td><code>4B</code></td><td>K</td><td><kbd>&#75;</kbd></td><td><code>107</code></td><td><code>6B</code></td><td>k</td><td><kbd>&#107;</kbd></td></tr>
+              <tr><td><code>12</code></td><td><code>C</code></td><td>FF</td><td><kbd>&#12;</kbd></td><td><code>44</code></td><td><code>2C</code></td><td>,</td><td><kbd>&#44;</kbd></td><td><code>76</code></td><td><code>4C</code></td><td>L</td><td><kbd>&#76;</kbd></td><td><code>108</code></td><td><code>6C</code></td><td>l</td><td><kbd>&#108;</kbd></td></tr>
+              <tr><td><code>13</code></td><td><code>D</code></td><td>CR</td><td><kbd>&#13;</kbd></td><td><code>45</code></td><td><code>2D</code></td><td>-</td><td><kbd>&#45;</kbd></td><td><code>77</code></td><td><code>4D</code></td><td>M</td><td><kbd>&#77;</kbd></td><td><code>109</code></td><td><code>6D</code></td><td>m</td><td><kbd>&#109;</kbd></td></tr>
+              <tr><td><code>14</code></td><td><code>E</code></td><td>SO</td><td><kbd>&#14;</kbd></td><td><code>46</code></td><td><code>2E</code></td><td>.</td><td><kbd>&#46;</kbd></td><td><code>78</code></td><td><code>4E</code></td><td>N</td><td><kbd>&#78;</kbd></td><td><code>110</code></td><td><code>6E</code></td><td>n</td><td><kbd>&#110;</kbd></td></tr>
+              <tr><td><code>15</code></td><td><code>F</code></td><td>SI</td><td><kbd>&#15;</kbd></td><td><code>47</code></td><td><code>2F</code></td><td>/</td><td><kbd>&#47;</kbd></td><td><code>79</code></td><td><code>4F</code></td><td>O</td><td><kbd>&#79;</kbd></td><td><code>111</code></td><td><code>6F</code></td><td>o</td><td><kbd>&#111;</kbd></td></tr>
+              <tr><td><code>16</code></td><td><code>10</code></td><td>DLE</td><td><kbd>&#16;</kbd></td><td><code>48</code></td><td><code>30</code></td><td>0</td><td><kbd>&#48;</kbd></td><td><code>80</code></td><td><code>50</code></td><td>P</td><td><kbd>&#80;</kbd></td><td><code>112</code></td><td><code>70</code></td><td>p</td><td><kbd>&#112;</kbd></td></tr>
+              <tr><td><code>17</code></td><td><code>11</code></td><td>DC1</td><td><kbd>&#17;</kbd></td><td><code>49</code></td><td><code>31</code></td><td>1</td><td><kbd>&#49;</kbd></td><td><code>81</code></td><td><code>51</code></td><td>Q</td><td><kbd>&#81;</kbd></td><td><code>113</code></td><td><code>71</code></td><td>q</td><td><kbd>&#113;</kbd></td></tr>
+              <tr><td><code>18</code></td><td><code>12</code></td><td>DC2</td><td><kbd>&#18;</kbd></td><td><code>50</code></td><td><code>32</code></td><td>2</td><td><kbd>&#50;</kbd></td><td><code>82</code></td><td><code>52</code></td><td>R</td><td><kbd>&#82;</kbd></td><td><code>114</code></td><td><code>72</code></td><td>r</td><td><kbd>&#114;</kbd></td></tr>
+              <tr><td><code>19</code></td><td><code>13</code></td><td>DC3</td><td><kbd>&#19;</kbd></td><td><code>51</code></td><td><code>33</code></td><td>3</td><td><kbd>&#51;</kbd></td><td><code>83</code></td><td><code>53</code></td><td>S</td><td><kbd>&#83;</kbd></td><td><code>115</code></td><td><code>73</code></td><td>s</td><td><kbd>&#115;</kbd></td></tr>
+              <tr><td><code>20</code></td><td><code>14</code></td><td>DC4</td><td><kbd>&#20;</kbd></td><td><code>52</code></td><td><code>34</code></td><td>4</td><td><kbd>&#52;</kbd></td><td><code>84</code></td><td><code>54</code></td><td>T</td><td><kbd>&#84;</kbd></td><td><code>116</code></td><td><code>74</code></td><td>t</td><td><kbd>&#116;</kbd></td></tr>
+              <tr><td><code>21</code></td><td><code>15</code></td><td>NAK</td><td><kbd>&#21;</kbd></td><td><code>53</code></td><td><code>35</code></td><td>5</td><td><kbd>&#53;</kbd></td><td><code>85</code></td><td><code>55</code></td><td>U</td><td><kbd>&#85;</kbd></td><td><code>117</code></td><td><code>75</code></td><td>u</td><td><kbd>&#117;</kbd></td></tr>
+              <tr><td><code>22</code></td><td><code>16</code></td><td>SYN</td><td><kbd>&#22;</kbd></td><td><code>54</code></td><td><code>36</code></td><td>6</td><td><kbd>&#54;</kbd></td><td><code>86</code></td><td><code>56</code></td><td>V</td><td><kbd>&#86;</kbd></td><td><code>118</code></td><td><code>76</code></td><td>v</td><td><kbd>&#118;</kbd></td></tr>
+              <tr><td><code>23</code></td><td><code>17</code></td><td>ETB</td><td><kbd>&#23;</kbd></td><td><code>55</code></td><td><code>37</code></td><td>7</td><td><kbd>&#55;</kbd></td><td><code>87</code></td><td><code>57</code></td><td>W</td><td><kbd>&#87;</kbd></td><td><code>119</code></td><td><code>77</code></td><td>w</td><td><kbd>&#119;</kbd></td></tr>
+              <tr><td><code>24</code></td><td><code>18</code></td><td>CAN</td><td><kbd>&#24;</kbd></td><td><code>56</code></td><td><code>38</code></td><td>8</td><td><kbd>&#56;</kbd></td><td><code>88</code></td><td><code>58</code></td><td>X</td><td><kbd>&#88;</kbd></td><td><code>120</code></td><td><code>78</code></td><td>x</td><td><kbd>&#120;</kbd></td></tr>
+              <tr><td><code>25</code></td><td><code>19</code></td><td>EM</td><td><kbd>&#25;</kbd></td><td><code>57</code></td><td><code>39</code></td><td>9</td><td><kbd>&#57;</kbd></td><td><code>89</code></td><td><code>59</code></td><td>Y</td><td><kbd>&#89;</kbd></td><td><code>121</code></td><td><code>79</code></td><td>y</td><td><kbd>&#121;</kbd></td></tr>
+              <tr><td><code>26</code></td><td><code>1A</code></td><td>SUB</td><td><kbd>&#26;</kbd></td><td><code>58</code></td><td><code>3A</code></td><td>:</td><td><kbd>&#58;</kbd></td><td><code>90</code></td><td><code>5A</code></td><td>Z</td><td><kbd>&#90;</kbd></td><td><code>122</code></td><td><code>7A</code></td><td>z</td><td><kbd>&#122;</kbd></td></tr>
+              <tr><td><code>27</code></td><td><code>1B</code></td><td>ESC</td><td><kbd>&#27;</kbd></td><td><code>59</code></td><td><code>3B</code></td><td>;</td><td><kbd>&#59;</kbd></td><td><code>91</code></td><td><code>5B</code></td><td>[</td><td><kbd>&#91;</kbd></td><td><code>123</code></td><td><code>7B</code></td><td>{</td><td><kbd>&#123;</kbd></td></tr>
+              <tr><td><code>28</code></td><td><code>1C</code></td><td>FS</td><td><kbd>&#28;</kbd></td><td><code>60</code></td><td><code>3C</code></td><td><</td><td><kbd>&#60;</kbd></td><td><code>92</code></td><td><code>5C</code></td><td>\</td><td><kbd>&#92;</kbd></td><td><code>124</code></td><td><code>7C</code></td><td>|</td><td><kbd>&#124;</kbd></td></tr>
+              <tr><td><code>29</code></td><td><code>1D</code></td><td>GS</td><td><kbd>&#29;</kbd></td><td><code>61</code></td><td><code>3D</code></td><td>=</td><td><kbd>&#61;</kbd></td><td><code>93</code></td><td><code>5D</code></td><td>]</td><td><kbd>&#93;</kbd></td><td><code>125</code></td><td><code>7D</code></td><td>}</td><td><kbd>&#125;</kbd></td></tr>
+              <tr><td><code>30</code></td><td><code>1E</code></td><td>RS</td><td><kbd>&#30;</kbd></td><td><code>62</code></td><td><code>3E</code></td><td>></td><td><kbd>&#62;</kbd></td><td><code>94</code></td><td><code>5E</code></td><td>^</td><td><kbd>&#94;</kbd></td><td><code>126</code></td><td><code>7E</code></td><td>~</td><td><kbd>&#126;</kbd></td></tr>
+              <tr><td><code>31</code></td><td><code>1F</code></td><td>US</td><td><kbd>&#31;</kbd></td><td><code>63</code></td><td><code>3F</code></td><td>?</td><td><kbd>&#63;</kbd></td><td><code>95</code></td><td><code>5F</code></td><td>_</td><td><kbd>&#95;</kbd></td><td><code>127</code></td><td><code>7F</code></td><td>DEL</td><td><kbd>&#127;</kbd></td></tr>
+            </tbody>
+          </table>
+        </div>
       </section>
     </main>
     <hr>
